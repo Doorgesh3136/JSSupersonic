@@ -1,0 +1,63 @@
+# JS Supersonic
+
+> Electronics, appliances and furniture, delivered across Mauritius. Online shop and 4 showrooms in Mauritius (Port Louis, Curepipe, Rose-Hill, Grand Baie).
+
+Prices are in Mauritian rupees (Rs) and include VAT. Delivery is free on orders over Rs 5,000. Pay monthly over 6 to 36 months.
+
+## Main pages
+- [All products](https://doorgesh3136.github.io/jssupersonic/shop.html)
+- [Today's deals](https://doorgesh3136.github.io/jssupersonic/deals.html)
+- [New in](https://doorgesh3136.github.io/jssupersonic/new.html)
+- [Pay monthly](https://doorgesh3136.github.io/jssupersonic/pay-monthly.html)
+- [Stores and opening hours](https://doorgesh3136.github.io/jssupersonic/stores.html)
+- [Help, delivery and returns](https://doorgesh3136.github.io/jssupersonic/help.html)
+
+## Categories
+- [TV & Audio](https://doorgesh3136.github.io/jssupersonic/category/tv-audio.html): 4K and QLED TVs from 43 to 75 inches, plus headphones and speakers that survive a day at the beach.
+- [Phones & Tablets](https://doorgesh3136.github.io/jssupersonic/category/phones.html): Unlocked phones that work on my.t, Emtel and MTML, with a local warranty.
+- [Computing](https://doorgesh3136.github.io/jssupersonic/category/computing.html): Laptops for school, the office and gaming, set up and ready when you collect.
+- [Gaming](https://doorgesh3136.github.io/jssupersonic/category/gaming.html): Consoles and controllers, with stock on launch day for new releases.
+- [Appliances & Cooling](https://doorgesh3136.github.io/jssupersonic/category/appliances.html): Fridges, washing machines and inverter air conditioners, delivered and installed.
+- [Kitchen](https://doorgesh3136.github.io/jssupersonic/category/kitchen.html): Microwaves, cookers and coffee machines for everyday cooking.
+- [Furniture & Bedding](https://doorgesh3136.github.io/jssupersonic/category/furniture.html): Sofas, beds and mattresses, delivered and assembled in your home.
+
+## Products
+- [Samsung 55" Crystal UHD 4K Smart TV](https://doorgesh3136.github.io/jssupersonic/product/samsung-55-crystal-uhd-4k-smart-tv.html): Rs 27,990
+- [LG 65" QNED 4K Smart TV](https://doorgesh3136.github.io/jssupersonic/product/lg-65-qned-4k-smart-tv.html): Rs 49,990
+- [Hisense 43" Full HD VIDAA Smart TV](https://doorgesh3136.github.io/jssupersonic/product/hisense-43-full-hd-vidaa-smart-tv.html): Rs 12,490
+- [TCL 75" QLED Google TV](https://doorgesh3136.github.io/jssupersonic/product/tcl-75-qled-google-tv.html): Rs 59,990
+- [Sony WH-1000XM5 Noise Cancelling Headphones](https://doorgesh3136.github.io/jssupersonic/product/sony-wh-1000xm5-noise-cancelling-headphones.html): Rs 16,990
+- [JBL Flip 6 Portable Bluetooth Speaker](https://doorgesh3136.github.io/jssupersonic/product/jbl-flip-6-portable-bluetooth-speaker.html): Rs 5,490
+- [Marshall Emberton II Speaker](https://doorgesh3136.github.io/jssupersonic/product/marshall-emberton-ii-speaker.html): Rs 7,990
+- [JBL Tune 520BT Wireless Headphones](https://doorgesh3136.github.io/jssupersonic/product/jbl-tune-520bt-wireless-headphones.html): Rs 2,190
+- [Samsung Galaxy A56 5G 256GB](https://doorgesh3136.github.io/jssupersonic/product/samsung-galaxy-a56-5g-256gb.html): Rs 19,990
+- [Apple iPhone 16 128GB](https://doorgesh3136.github.io/jssupersonic/product/apple-iphone-16-128gb.html): Rs 44,990
+- [Xiaomi Redmi Note 14 Pro 256GB](https://doorgesh3136.github.io/jssupersonic/product/xiaomi-redmi-note-14-pro-256gb.html): Rs 13,990
+- [Apple iPad 11" Wi-Fi 128GB](https://doorgesh3136.github.io/jssupersonic/product/apple-ipad-11-wi-fi-128gb.html): Rs 21,990
+- [Samsung Galaxy Tab S10 FE](https://doorgesh3136.github.io/jssupersonic/product/samsung-galaxy-tab-s10-fe.html): Rs 18,490
+- [Apple Watch Series 10 GPS 42mm](https://doorgesh3136.github.io/jssupersonic/product/apple-watch-series-10-gps-42mm.html): Rs 17,990
+- [Huawei Watch GT 5 46mm](https://doorgesh3136.github.io/jssupersonic/product/huawei-watch-gt-5-46mm.html): Rs 9,490
+- [HP 15" Laptop Core i5, 16GB, 512GB SSD](https://doorgesh3136.github.io/jssupersonic/product/hp-15-laptop-core-i5-16gb-512gb-ssd.html): Rs 27,990
+- [Apple MacBook Air 13" M3 256GB](https://doorgesh3136.github.io/jssupersonic/product/apple-macbook-air-13-m3-256gb.html): Rs 54,990
+- [Lenovo IdeaPad Slim 3 Ryzen 7](https://doorgesh3136.github.io/jssupersonic/product/lenovo-ideapad-slim-3-ryzen-7.html): Rs 29,990
+- [ASUS TUF Gaming F15 RTX 4060](https://doorgesh3136.github.io/jssupersonic/product/asus-tuf-gaming-f15-rtx-4060.html): Rs 54,990
+- [PlayStation 5 Slim Digital Edition](https://doorgesh3136.github.io/jssupersonic/product/playstation-5-slim-digital-edition.html): Rs 24,990
+- [DualSense Wireless Controller](https://doorgesh3136.github.io/jssupersonic/product/dualsense-wireless-controller.html): Rs 3,790
+- [Xbox Series X 1TB](https://doorgesh3136.github.io/jssupersonic/product/xbox-series-x-1tb.html): Rs 27,990
+- [Nintendo Switch OLED](https://doorgesh3136.github.io/jssupersonic/product/nintendo-switch-oled.html): Rs 15,990
+- [Samsung 385L Double Door Fridge](https://doorgesh3136.github.io/jssupersonic/product/samsung-385l-double-door-fridge.html): Rs 26,990
+- [LG 635L Side-by-Side InstaView Fridge](https://doorgesh3136.github.io/jssupersonic/product/lg-635l-side-by-side-instaview-fridge.html): Rs 64,990
+- [Beko 8kg Front Load Washing Machine](https://doorgesh3136.github.io/jssupersonic/product/beko-8kg-front-load-washing-machine.html): Rs 17,990
+- [LG 10kg AI Direct Drive Washer](https://doorgesh3136.github.io/jssupersonic/product/lg-10kg-ai-direct-drive-washer.html): Rs 27,490
+- [Midea 12000 BTU Inverter Air Conditioner](https://doorgesh3136.github.io/jssupersonic/product/midea-12000-btu-inverter-air-conditioner.html): Rs 18,990
+- [Gree 18000 BTU Inverter Air Conditioner](https://doorgesh3136.github.io/jssupersonic/product/gree-18000-btu-inverter-air-conditioner.html): Rs 26,990
+- [Samsung 23L Solo Microwave](https://doorgesh3136.github.io/jssupersonic/product/samsung-23l-solo-microwave.html): Rs 3,990
+- [De'Longhi Espresso Coffee Machine](https://doorgesh3136.github.io/jssupersonic/product/delonghi-espresso-coffee-machine.html): Rs 12,990
+- [Whirlpool 60cm 4-Burner Gas Cooker](https://doorgesh3136.github.io/jssupersonic/product/whirlpool-60cm-4-burner-gas-cooker.html): Rs 16,490
+- [Oslo 3-Seater Fabric Sofa, Sage](https://doorgesh3136.github.io/jssupersonic/product/oslo-3-seater-fabric-sofa-sage.html): Rs 34,990
+- [Milano 4-Seater Sofa, Grey](https://doorgesh3136.github.io/jssupersonic/product/milano-4-seater-sofa-grey.html): Rs 42,990
+- [Nordic Accent Armchair, Mustard](https://doorgesh3136.github.io/jssupersonic/product/nordic-accent-armchair-mustard.html): Rs 9,990
+- [Luna Queen Bed Frame with Mattress](https://doorgesh3136.github.io/jssupersonic/product/luna-queen-bed-frame-with-mattress.html): Rs 29,990
+- [Serena King Size Bed Set](https://doorgesh3136.github.io/jssupersonic/product/serena-king-size-bed-set.html): Rs 44,990
+- [Cosy Lounge Set, Sofa and Coffee Table](https://doorgesh3136.github.io/jssupersonic/product/cosy-lounge-set-sofa-and-coffee-table.html): Rs 24,990
+- [ComfortPlus Orthopaedic Mattress, Queen](https://doorgesh3136.github.io/jssupersonic/product/comfortplus-orthopaedic-mattress-queen.html): Rs 15,990

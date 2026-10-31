@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /cart.html
+Disallow: /checkout.html
+Disallow: /account.html
+Disallow: /track.html
+Disallow: /wishlist.html
+
+Sitemap: https://doorgesh3136.github.io/jssupersonic/sitemap.xml

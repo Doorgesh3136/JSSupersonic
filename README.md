@@ -1,48 +1,79 @@
-# JS Supersonic — online store
+# JS Supersonic: online store
 
-A full e-commerce storefront for **JS Supersonic** (electronics, appliances and furniture, Mauritius), in the style of the big local retailers: mega-menu categories, flash deals with a countdown, pay-monthly (hire purchase) pricing on every product, cart, and a multi-step checkout.
+An electronics, appliances and furniture shop for Mauritius, with an admin panel. Plain HTML, CSS and JavaScript with no frameworks, so it is fast on phones and runs on GitHub Pages or any web host.
 
-It's a static site (plain HTML, CSS and JavaScript, with no build step), so it runs on GitHub Pages or any web host.
+## What's in it
 
-## Pages
+**Shop pages:** home, all products, 7 category pages, 39 product pages, deals, new in, brands, pay monthly, stores, help and contact, track my order, my account, wishlist, cart, checkout, privacy, terms and a 404 page.
 
-| Page | What it does |
-|---|---|
-| `index.html` | Home page: hero slider, category tiles, flash deals with a countdown to midnight, bestsellers, pay-monthly calculator, new arrivals, brands, newsletter |
-| `shop.html` | Catalogue with category, brand, price and offer filters, sorting, search (`?q=`) and wishlist (`?wish=1`) |
-| `product.html?id=N` | Product page: image gallery, price and savings, monthly-payment terms, quantity, specs, delivery and warranty info, related products |
-| `cart.html` | Cart: quantities, promo codes, free-delivery progress bar |
-| `checkout.html` | Checkout: customer details, home delivery or Click & Collect, payment method, order confirmation |
-| `stores.html` | Showrooms and contact form |
+**Motion:**
+- An intro plays once per visit.
+- A slanted orange and black curtain sweeps across between pages.
+- The hero slider wipes between slides and the headline rises word by word.
+- A ticker strip and a brand strip scroll across the page.
+- Product photos fly into the cart when you add them.
+- Tabs have a sliding underline.
 
-The cart, wishlist and orders are saved in the browser (`localStorage`).
+All of it switches off for visitors who set "reduce motion" on their device.
 
-## Payments: demo mode
+**Admin panel** (`/admin/`): dashboard with sales chart, products (add, edit, hide, delete), orders with status updates, customers, messages, promo codes, announcement bar and store settings. The first visit asks you to create the admin password. Only a scrambled (hashed) version is saved, never the password itself.
 
-Checkout shows card, Juice, my.t money, Blink, cash on delivery and pay monthly as options, but **none of them are connected**. Placing an order only shows a confirmation screen. To go live, connect a payment gateway (for example MIPS or an MCB/SBM gateway) and a backend that saves orders.
+## How the admin panel saves changes
 
-Promo codes for testing: `SUPERSONIC10` (10% off) and `WELCOME5` (5% off).
+This version has no server. The admin panel saves changes in the browser it is used in, and the shop shows them straight away on that same device. To publish changes for every visitor:
 
-## Editing content
+1. In the admin panel, go to **Settings** and click **Download catalogue**.
+2. Replace `data/catalog.json` in this repo with the downloaded file.
+3. Run `python3 build.py` and commit the result.
 
-Everything lives in **`assets/js/data.js`**:
+Orders, messages and accounts placed on the live site are also stored in each visitor's own browser. The next step before taking real orders is to connect a hosted database (for example Supabase or Firebase) so orders reach the admin panel from every device.
 
-- `SITE`: phone, WhatsApp, email, delivery fee, free-delivery threshold, promo codes, pay-monthly rates
-- `CATEGORIES`: shop categories
-- `PRODUCTS`: the catalogue (name, brand, price, old price, image, specs, tags `deal` / `new` / `best`)
-- `STORES`: showroom names, addresses and hours
+## Before going live
 
-⚠️ All products, prices, phone numbers, emails and store addresses are **placeholders**. Replace them with JS Supersonic's real details before launch.
+- **Contact details:** the phone and WhatsApp numbers are placeholders (`+230 5XXX XXXX`). Change them in `data/catalog.json` under `site`, then rebuild. Store addresses are under `stores`.
+- **Products and photos:** all 39 products, prices and stock levels are samples. Photos come from Unsplash (free to use under the Unsplash License) and should be replaced with real product photos.
+- **Payments:** checkout is a demo. Card, Juice, my.t money, Blink, cash on delivery and pay monthly are shown, but none are connected to a payment provider.
+- **Policies:** delivery, returns, warranty, privacy and terms text are starting templates. The business and a lawyer should check them.
+- **Domain:** `site.url` in `data/catalog.json` is used for canonical tags, the sitemap and the share image. Change it when you connect a custom domain, then rebuild.
+- **Analytics:** add a Google Analytics 4 ID in admin Settings, or in `site.ga_id`. It only loads for visitors who accept cookies.
 
-Product images are hotlinked from [Unsplash](https://unsplash.com) (free to use under the Unsplash License). Replace them with real product photos.
+## Editing and building
 
-## Run locally
+Everything is generated from `data/catalog.json` by `build.py`:
 
 ```bash
-python3 -m http.server 8000
-# open http://localhost:8000
+python3 build.py          # rebuilds every page, sitemap.xml, robots.txt and llms.txt
+python3 -m http.server    # preview at http://localhost:8000
 ```
 
-## Deploy on GitHub Pages
+Do not edit the generated `.html` files by hand. Change `build.py`, `data/catalog.json`, `assets/css/site.css` or `assets/js/site.js`, then rebuild.
 
-Go to **Settings → Pages → Source: Deploy from a branch**, then choose `main` and `/ (root)`.
+## Publish on GitHub Pages
+
+1. In the repo, go to **Settings → Pages** and choose **Deploy from a branch**, then `main` and `/ (root)`.
+2. Turn on **Enforce HTTPS**.
+3. The site appears at `https://doorgesh3136.github.io/jssupersonic/`.
+
+## Launch checklist status
+
+- **Launch:**
+  - Privacy, terms and 404 pages are in.
+  - No secrets are in the code. HTTPS is forced.
+  - A small cookie card asks for consent and waits until the visitor scrolls.
+  - Every page has its own title and description, plus a share image and favicons.
+  - `sitemap.xml` and `robots.txt` are in. Every image has alt text.
+  - Images are compressed and resized per screen. The font is self-hosted.
+  - Every page has one main button.
+  - Forms are validated and protected against spam with a hidden field and a time check.
+  - Analytics only loads after consent.
+- **Mobile:**
+  - Nothing scrolls sideways from 320px up, and pages work turned sideways too.
+  - A bottom tab bar keeps the main actions in thumb reach.
+  - Buttons are at least 44px. Phone numbers are tap-to-call once real numbers are set.
+  - Images keep their space while loading, so the page doesn't jump.
+- **Design:** one typeface (Archivo, not Inter), with no gradient text, glass panels, emoji in headings, badges above headlines or fade-in-on-scroll. All text colours pass WCAG AA contrast.
+- **SEO:**
+  - Every page is real HTML, not built by JavaScript in the browser.
+  - Canonical tags, breadcrumbs and structured data are in, including Product, store, FAQ and breadcrumb data.
+  - `llms.txt` is in, and pages link to each other.
+  - No source maps or large JavaScript bundles.
