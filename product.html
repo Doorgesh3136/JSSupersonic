@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product | JS Supersonic</title>
+  <meta name="description" content="Product details, specifications and pay-monthly options at JS Supersonic.">
+  <meta name="theme-color" content="#13244f">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="product">
+  <div id="header"></div>
+  <main class="container">
+    <nav class="crumbs" id="crumbs"></nav>
+    <section class="pdp" id="pdp"></section>
+    <section class="tabs">
+      <div class="tab-btns">
+        <button class="active" data-tab="tab-desc">Description</button>
+        <button data-tab="tab-specs">Specifications</button>
+        <button data-tab="tab-delivery">Delivery & Warranty</button>
+      </div>
+      <div class="tab-panel active" id="tab-desc"></div>
+      <div class="tab-panel" id="tab-specs"></div>
+      <div class="tab-panel" id="tab-delivery"></div>
+    </section>
+    <section class="section">
+      <div class="section-head"><div><h2>You may also like</h2></div></div>
+      <div class="rail" id="related"></div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

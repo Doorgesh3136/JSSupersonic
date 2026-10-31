@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout | JS Supersonic</title>
+  <meta name="description" content="Secure checkout at JS Supersonic.">
+  <meta name="theme-color" content="#13244f">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="checkout">
+  <div id="header"></div>
+  <main class="container">
+    <nav class="crumbs"><a href="index.html">Home</a><span class="sep">/</span><a href="cart.html">Cart</a><span class="sep">/</span><span>Checkout</span></nav>
+    <h1 class="page-title">Checkout</h1>
+    <div id="checkout">
+      <div class="demo-banner"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg><span><strong>Demo checkout:</strong> online payments are not live yet. Placing an order will not charge you.</span></div>
+      <div class="cart-layout">
+        <form id="co-form" novalidate>
+          <div class="panel co-step">
+            <h3><b>1</b> Your details</h3>
+            <div class="form-grid">
+              <div class="field"><label for="fname">First name <span class="req">*</span></label><input class="input" id="fname" name="fname" required autocomplete="given-name"><div class="err">Please enter your first name</div></div>
+              <div class="field"><label for="lname">Last name <span class="req">*</span></label><input class="input" id="lname" name="lname" required autocomplete="family-name"><div class="err">Please enter your last name</div></div>
+              <div class="field"><label for="phone">Mobile number <span class="req">*</span></label><input class="input" id="phone" name="phone" type="tel" required placeholder="+230 5XXX XXXX" autocomplete="tel"><div class="err">Please enter a valid phone number</div></div>
+              <div class="field"><label for="email">Email <span class="req">*</span></label><input class="input" id="email" name="email" type="email" required autocomplete="email"><div class="err">Please enter a valid email</div></div>
+            </div>
+          </div>
+
+          <div class="panel co-step">
+            <h3><b>2</b> Delivery</h3>
+            <div class="options two">
+              <label class="option"><input type="radio" name="delivery" value="home" checked><div><strong>Home delivery</strong><span>Islandwide in 24–72h</span></div></label>
+              <label class="option"><input type="radio" name="delivery" value="collect"><div><strong>Click & Collect</strong><span>Free · ready in 2 hours</span></div><span class="tag" style="color:var(--green)">FREE</span></label>
+            </div>
+            <div id="home-fields" style="margin-top:14px">
+              <div class="form-grid">
+                <div class="field full"><label for="address">Street address <span class="req">*</span></label><input class="input" id="address" name="address" data-req autocomplete="street-address"><div class="err">Please enter your address</div></div>
+                <div class="field"><label for="town">Town / village <span class="req">*</span></label><input class="input" id="town" name="town" data-req><div class="err">Please enter your town</div></div>
+                <div class="field"><label for="district">District <span class="req">*</span></label><select class="select" id="district" name="district" data-req></select><div class="err">Please choose a district</div></div>
+                <div class="field full"><label for="notes">Delivery notes (optional)</label><input class="input" id="notes" name="notes" placeholder="e.g. Call before arriving, 2nd floor"></div>
+              </div>
+              <label class="check" id="install-wrap" style="margin-top:10px" hidden><input type="checkbox" id="install"> Add air conditioner installation (Rs 1,500)</label>
+            </div>
+            <div id="collect-fields" style="margin-top:14px" hidden>
+              <div class="field"><label for="store">Collect from</label><select class="select" id="store" name="store"></select></div>
+            </div>
+          </div>
+
+          <div class="panel co-step">
+            <h3><b>3</b> Payment</h3>
+            <div class="options">
+              <label class="option"><input type="radio" name="pay" value="card" checked><div><strong>Credit / debit card</strong><span>Visa, Mastercard — secured by 3-D Secure</span></div><span class="tag">VISA · MC</span></label>
+              <label class="option"><input type="radio" name="pay" value="juice"><div><strong>Juice by MCB</strong><span>Pay instantly from the Juice app</span></div></label>
+              <label class="option"><input type="radio" name="pay" value="myt"><div><strong>my.t money</strong><span>Scan & pay with your my.t money wallet</span></div></label>
+              <label class="option"><input type="radio" name="pay" value="blink"><div><strong>Blink by Emtel</strong><span>Mobile wallet payment</span></div></label>
+              <label class="option"><input type="radio" name="pay" value="cod"><div><strong>Cash on delivery</strong><span>Pay in cash or by card when your order arrives</span></div></label>
+              <label class="option"><input type="radio" name="pay" value="hp"><div><strong>Pay monthly (hire purchase)</strong><span>Spread the cost over 6–36 months, subject to approval</span></div><span class="tag" style="color:var(--accent)">POPULAR</span></label>
+            </div>
+
+            <div class="pay-detail" data-for="card" id="card-fields">
+              <div class="form-grid">
+                <div class="field full"><label for="cc-name">Name on card <span class="req">*</span></label><input class="input" id="cc-name" autocomplete="cc-name"><div class="err">Please enter the cardholder name</div></div>
+                <div class="field full"><label for="cc-num">Card number <span class="req">*</span></label><input class="input" id="cc-num" inputmode="numeric" placeholder="4242 4242 4242 4242" autocomplete="cc-number"><div class="err">Please enter a valid card number</div></div>
+                <div class="field"><label for="cc-exp">Expiry <span class="req">*</span></label><input class="input" id="cc-exp" inputmode="numeric" placeholder="MM/YY" autocomplete="cc-exp"><div class="err">Use MM/YY</div></div>
+                <div class="field"><label for="cc-cvc">CVC <span class="req">*</span></label><input class="input" id="cc-cvc" inputmode="numeric" placeholder="123" minlength="3" autocomplete="cc-csc"><div class="err">3–4 digits</div></div>
+              </div>
+            </div>
+            <div class="pay-detail" data-for="juice">After placing your order you'll receive a payment request in the Juice app on the mobile number above.</div>
+            <div class="pay-detail" data-for="myt">A my.t money QR code will be shown to complete payment.</div>
+            <div class="pay-detail" data-for="blink">You'll be redirected to Blink to confirm the payment.</div>
+            <div class="pay-detail" data-for="cod">Please have the exact amount ready. Our drivers also carry a card machine.</div>
+            <div class="pay-detail" data-for="hp" id="hp-fields">
+              <div class="form-grid">
+                <div class="field"><label for="hp-plan">Preferred plan <span class="req">*</span></label><select class="select" id="hp-plan" name="hpplan"></select></div>
+                <div class="field"><label for="hp-job">Employment status <span class="req">*</span></label><select class="select" id="hp-job"><option value="">Select</option><option>Employed (private)</option><option>Employed (government)</option><option>Self-employed</option><option>Pensioner</option></select><div class="err">Please choose one</div></div>
+              </div>
+              <p class="hp-note">Our credit team will call you within 1 working day. You'll need your NIC, latest payslip and proof of address.</p>
+            </div>
+          </div>
+        </form>
+        <aside class="panel" id="co-summary" style="position:sticky;top:140px"></aside>
+      </div>
+    </div>
+  </main>
+  <div id="footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

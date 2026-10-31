@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stores & Contact | JS Supersonic</title>
+  <meta name="description" content="Find a JS Supersonic showroom near you in Mauritius and contact our customer care team.">
+  <meta name="theme-color" content="#13244f">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="stores">
+  <div id="header"></div>
+  <main class="container">
+    <nav class="crumbs"><a href="index.html">Home</a><span class="sep">/</span><span>Stores & Contact</span></nav>
+    <h1 class="page-title">Our showrooms</h1>
+    <div class="stores-grid" id="stores-grid"></div>
+    <section class="section" id="contact">
+      <div class="section-head"><div><h2>Contact us</h2><p>Questions about an order, delivery, warranty or pay monthly? We're here to help.</p></div></div>
+      <div class="contact-grid">
+        <div class="panel"><div class="contact-list" id="contact-info"></div></div>
+        <form class="panel" id="contact-form">
+          <h3>Send us a message</h3>
+          <div class="form-grid">
+            <div class="field"><label for="c-name">Name</label><input class="input" id="c-name" required></div>
+            <div class="field"><label for="c-phone">Phone</label><input class="input" id="c-phone" type="tel"></div>
+            <div class="field full"><label for="c-email">Email</label><input class="input" id="c-email" type="email" required></div>
+            <div class="field full"><label for="c-topic">Topic</label><select class="select" id="c-topic"><option>Order & delivery</option><option>Pay monthly</option><option>Warranty & repairs</option><option>Returns</option><option>Business / bulk orders</option><option>Other</option></select></div>
+            <div class="field full"><label for="c-msg">Message</label><textarea class="input" id="c-msg" rows="5" required></textarea></div>
+          </div>
+          <button class="btn btn-lg" type="submit" style="margin-top:14px">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

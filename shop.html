@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop | JS Supersonic</title>
+  <meta name="description" content="Browse TVs, phones, laptops, gaming, appliances and furniture at JS Supersonic Mauritius.">
+  <meta name="theme-color" content="#13244f">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="shop">
+  <div id="header"></div>
+  <main class="container">
+    <nav class="crumbs"><a href="index.html">Home</a><span class="sep">/</span><span id="crumb-current">Shop</span></nav>
+    <h1 class="page-title" id="shop-title">All Products</h1>
+    <div class="shop">
+      <aside class="filters" id="filters" aria-label="Filters"></aside>
+      <section>
+        <div class="shop-bar">
+          <div class="count" id="result-count"></div>
+          <div class="right">
+            <button class="btn btn-ghost filter-toggle" id="filter-toggle"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3H2l8 9.5V19l4 2v-8.5z"/></svg> Filters</button>
+            <label class="sr-only" for="sort">Sort by</label>
+            <select class="select" id="sort">
+              <option value="featured">Sort: Featured</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="discount">Biggest discount</option>
+              <option value="rating">Top rated</option>
+            </select>
+          </div>
+        </div>
+        <div class="chips" id="chips"></div>
+        <div class="grid" id="product-grid"></div>
+      </section>
+    </div>
+  </main>
+  <div id="footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
